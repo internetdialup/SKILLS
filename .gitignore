@@ -1,0 +1,17 @@
+# Personal dictionaries and local agent context
+.local/
+*.local.md
+
+# Machine files and credentials
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+
+# Private evaluation artifacts and legacy local links
+/lexicon-idiom-context.md
+/tests/
+.scratch/
+__pycache__/
+*.py[cod]

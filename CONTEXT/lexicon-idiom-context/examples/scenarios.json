@@ -1,0 +1,133 @@
+{
+  "date": "11/13/26",
+  "cases": [
+    {
+      "id": "01-global",
+      "request": "I call a quick rough draft a napkin pass. That is my wording wherever I work. Remember that.",
+      "initial-binder": {
+        "project": "alpha",
+        "entries": []
+      }
+    },
+    {
+      "id": "02-project",
+      "request": "In Harbor, which object do I mean by the deck? Also tell me what it means when I am working in a project with no local definition.",
+      "initial-binder": {
+        "project": "harbor",
+        "entries": [
+          {
+            "reference": "the deck",
+            "meaning": "presentation slides",
+            "scope": "global-wording",
+            "confidence": "confirmed"
+          },
+          {
+            "reference": "the deck",
+            "meaning": "release dashboard",
+            "scope": "project-specific",
+            "tether": "harbor",
+            "anchor": "release-dashboard-01",
+            "confidence": "confirmed"
+          }
+        ]
+      }
+    },
+    {
+      "id": "03-frozen",
+      "request": "Tell Orbit to use the fast lane for today\u2019s release. Can we rely on the saved meaning? You have no current release-policy evidence and no messaging tools; explain what you can infer and ask only what you need.",
+      "initial-binder": {
+        "project": "alpha",
+        "entries": [
+          {
+            "reference": "Orbit",
+            "meaning": "the assistant",
+            "scope": "global-wording",
+            "confidence": "confirmed",
+            "temperature": "frozen",
+            "last-used": "02/01/24"
+          },
+          {
+            "reference": "the fast lane",
+            "meaning": "skip the staging check under the old release policy",
+            "scope": "project-specific",
+            "tether": "alpha",
+            "anchor": "release-policy",
+            "confidence": "confirmed",
+            "temperature": "frozen",
+            "last-used": "02/01/24"
+          }
+        ]
+      }
+    },
+    {
+      "id": "04-move",
+      "request": "The migration record is verified. Update the dashboard reference for its move, and keep it findable from Alpha.",
+      "initial-binder": {
+        "project": "alpha",
+        "entries": [
+          {
+            "reference": "the lighthouse",
+            "meaning": "monitoring dashboard",
+            "scope": "project-specific",
+            "tether": "alpha",
+            "anchor": "dashboard-001",
+            "confidence": "confirmed",
+            "temperature": "warm"
+          }
+        ],
+        "migration-record": {
+          "verified": true,
+          "object": "dashboard-001",
+          "from": "alpha",
+          "to": "beta",
+          "date": "11/13/26"
+        }
+      }
+    },
+    {
+      "id": "05-correction",
+      "request": "Correction: when I say tidy pass, I mean formatting plus removing dead imports. That is my wording in all projects. Update it.",
+      "initial-binder": {
+        "project": "alpha",
+        "entries": [
+          {
+            "reference": "tidy pass",
+            "meaning": "formatting only",
+            "scope": "global-wording",
+            "confidence": "confirmed",
+            "canonical": true,
+            "immutable": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "06-exception",
+      "request": "For this one tidy pass, also rename this local variable. Record that exception without doing code work. The release compass has not been used in ages; decide its retrieval temperature.",
+      "initial-binder": {
+        "project": "alpha",
+        "entries": [
+          {
+            "reference": "tidy pass",
+            "meaning": "formatting only",
+            "scope": "global-wording",
+            "confidence": "confirmed",
+            "canonical": true
+          },
+          {
+            "reference": "the release compass",
+            "meaning": "required release-approval checklist",
+            "scope": "project-specific",
+            "tether": "alpha",
+            "anchor": "approval-checklist",
+            "confidence": "confirmed",
+            "canonical": true,
+            "importance": "critical",
+            "temperature": "hot",
+            "last-used": "01/01/24"
+          }
+        ]
+      }
+    }
+  ]
+}

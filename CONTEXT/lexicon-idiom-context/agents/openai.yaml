@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lexicon / Idiom Context"
+  short_description: "Remember personal wording with project context"
+  default_prompt: "Use $lexicon-idiom-context to consult and maintain my private dictionary of personal and project-specific references."
