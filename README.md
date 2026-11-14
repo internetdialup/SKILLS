@@ -1,6 +1,9 @@
 # SKILLS
 
-Reusable agent skills organized by category.
+This is my public git for skills that I'm sharing with the world.
+These are reusable agent skills organized by category for the following areas of focus that I primarily work on.
+
+If there is a skill you want, please fork, and request one! 
 
 | Category | Focus |
 | --- | --- |
@@ -22,6 +25,6 @@ The complete `CONTEXT/lexicon-idiom-context/` folder is the installable skill. U
 
 This skill provides instructions, not a shared-memory service. Cross-agent continuity requires authorized access to the same private binder. The repository contains reusable instructions and fictional examples only; personal dictionaries belong in private storage.
 
-## Repository conventions
+## How to use Skills
 
 Add each skill under its category as `<skill-name>/SKILL.md`, with only the supporting resources it needs. Keep names lowercase and hyphenated within the uppercase category folders. Follow [AGENTS.md](AGENTS.md) for contribution and privacy rules.
