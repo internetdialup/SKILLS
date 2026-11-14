@@ -5,3 +5,4 @@
 - Do not create a remote, push, or make the repository public without the user's explicit authorization for the destination and reviewed files.
 - Keep personal lexicons, private project links, and local evaluation artifacts out of public packages. Use fictional examples.
 - Edit each skill's SKILL.md as its authoritative source; old draft links may point to it.
+- This Repo is Matt's repo and is a portfolio piece which is why the authorship belongs to him.
